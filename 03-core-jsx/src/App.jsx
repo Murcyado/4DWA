@@ -1,13 +1,11 @@
 import { createRoot } from "react-dom/client";
-import Crypto from "./Crypto";
+import SearchFields from "./SearchFields";
 
 const App = () => {
   return (
-    <div>
-      <h1>Liste des cryptos</h1>
-      <Crypto name="Etherium" code="ETH" />
-      <Crypto name="Bitcoin" code="BTC" />
-      <Crypto name="Cardano" code="ADA" />
+    <div className="container">
+      <h1 className="title">Crypto Logos</h1>
+      <SearchFields />
     </div>
   );
 };
